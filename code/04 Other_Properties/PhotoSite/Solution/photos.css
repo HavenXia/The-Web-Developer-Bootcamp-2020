@@ -1,0 +1,24 @@
+img {
+    width: 30%;
+    /* margin: 1.6666666%; */
+    margin: calc(10%/6);
+}
+
+nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    /* 改成全大写 */
+    text-transform: uppercase;
+    /* 决定了inner content的宽度*/
+    width: 30%;
+    /* 由于padding设置了horizontal的为0,所以border width也被确定了 */
+    border-bottom: 2px solid #f1f1f1;
+    /* 对齐image */
+    margin-left: calc(10%/6); 
+    /* text到border的距离 */
+    padding: 1.2em 0;
+}
+
+/* 30 + 30 + 30
+
+10% */

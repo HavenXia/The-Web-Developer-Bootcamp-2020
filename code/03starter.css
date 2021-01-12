@@ -1,0 +1,85 @@
+/* *{
+    background-color: cyan;
+} */
+
+body{
+    background-color: floralwhite;
+}
+
+button{
+    font-size: 30px;
+    background-color: greenyellow;
+}
+
+h1,h2 {
+    color: magenta;
+}
+
+#signup,#login{
+    background-color: grey;
+}
+
+.tag{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+span a{
+    color:teal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+input + button{
+    color:pink;
+}
+
+footer > a {
+    color:lightblue;
+}
+
+input[type="password"]{
+    color:green;
+}
+
+span[class="tag"]{
+    color: yellow;
+}
+
+a[href *= "www"]{
+    font-size: 30px;
+}
+
+section button:hover{
+    background-color: red;
+    color:yellow;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section button:active{
+    background-color: burlywood;
+}
+
+section:nth-of-type(2n){
+    background-color: slategray;
+}
+
+h2::first-letter{
+    font-size: 40px;
+}
+
+p::first-line{
+    color: purple;
+}
+
+p::selection{
+    background-color:yellow;
+}
+
+button {
+    background-color: gold !important;
+}
