@@ -4,3 +4,86 @@
 
 [HTML](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/Flexbox Starter/index.html) [CSS](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/Flexbox Starter/app.css)
 
+比如一个container里面有多个div: 不同于把div设置成inline-block, 这里实质上是让div flex的呈现在container里面
+
+<font color = grape>**如果divs的总width/height超过了container的width/height, 会自动适应container, 如果有足够空间就还是按照div自己**</font>
+
++ `flex-direction` 决定了flex的方向: row(**cross axis is vertical**)  column(**cross axis is horizontal**) row-reverse column-reverse
+
++ `justify-content`  ==Along Main-Axis==决定了这些**direct child** div是 <font color = grape>**居左,居中还是居右, 注意这还是受制于container的**</font>
+
+  ·比如space-between和space-around, space evenly都是间隔相同, 但是边界分别是无缝, 半个间距,一个间距
+
++ `flex-wrap`  决定了flex elements 是否force onto one line 还是允许multiple line
+
+  如果设置为wrap-reverse, 会<font color = grape>**改变corss axis 的direction为bottom to top**</font>
+
++ `align-items`==Along Cross-Axis==决定了alignment of items on the <font color = grape>**Cross Axis(即FlexBox的vertical axis, 另一条叫Main Axis)**</font> 
+
+  如果div里面有text, 并且设置`align-items:baseline;` 那么div会按照text的对齐来排列
+
++ `align-self` 决定了单独element的`align-item`
+
++ `align-content` 决定了<font color = grape>**wrap**</font>情况下, 控制不同content之间space的alignment, `center` 就直接贴紧
+
+
+
+#### 对于container内部的elements
+
++ `flex-basis` ==Along Main-Axis== 决定了initial main size of a flex item
+
++ `flex-grow` 决定了the flex **grow factor** of a flex item's main size(这个size是flex-direction的方向)
+
+  <font color = gree>比如1st div 设为1, last div设为2, 那么他们肯定会填满整个container, 但是last div增长的size必定是1st div的两倍!</font>
+
++ `flex-shrink` 决定了the flex **grow factor** of a flex item's main size, <font color = grape>**设置为0时可以强制不shrink**</font>
+
+#### Flex Shortand
+
+[HTML](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/Flexbox/index.html) [CSS](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/Flexbox/app.css)
+
+<font color = grape>**Shorthand: `flex`**</font>: 不同参数量代表的不一样, 查阅MDN
+
+```css
+/* Two values: flex-grow | flex-basis */
+flex: 1 30px;
+/* Two values: flex-grow | flex-shrink */
+flex: 2 2;
+/* Three values: flex-grow | flex-shrink | flex-basis */
+flex: 2 2 10%;
+```
+
+
+
+# Responsive Design: Media Queries
+
+自适应浏览器页面 [HTML](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/MediaQueries/index.html)   [CSS](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/MediaQueries/app.css)
+
++ 可以根据Viewport的width来设置不同的css样式, 也可以用逻辑词设置更多条件
+
+  ```css
+  @media (min-width: 1000px) and (max-width: 1200px){
+      h1 {
+          color: yellow; 
+      }
+  }
+  ```
+
++ 也可以根据Viewport的Orientation来设置
+
+  ```css
+  @media (orientation: landscape) {
+      body {
+          background-color: magenta;
+      }
+  }
+  ```
+
+  
+
+
+
+
+
+
+
