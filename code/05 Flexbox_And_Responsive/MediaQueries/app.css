@@ -72,11 +72,11 @@ h1 {
     }
 }
 
-/* @media (orientation: landscape) {
+@media (orientation: landscape) {
  body {
      background-color: magenta;
  }
-} */
+}
 
 
 @media (max-width: 768px){
