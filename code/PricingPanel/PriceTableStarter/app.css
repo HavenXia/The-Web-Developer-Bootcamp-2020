@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    /* 设置border是向外的 */
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    /* 以下是让整个panel element处在屏幕中间 */
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 设置这一圈圆角 */
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    /* 同时这样设置可以让width在<960的时候和body一样大! */
+    width: 100%;
+    max-width: 960px;
+    /* 但是还需要让panel也变成flex, 里面的div才能正常! */
+    /* 这里默认用手机views */
+    display: flex;
+    flex-direction: column;
+    /* 这个align和flex direction没关系, 就是水平的居中 */
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* 三个大版块的下划线 */
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+/* 最后一个不用bottom line */
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+/* 图片和文字加margin, width等于panel class的width*/
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+/* 修改header样式 */
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    /* 直接做到让两行字出现间隔 */
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+/* 补上一行bottom line */
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    font-weight: 700;
+    color:  #016ff9;
+    display: block;
+    font-size: 32px;
+}
+
+/* make ahref look like a button! */
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    width: 10vh;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin: 25px auto;
+    /* set transition for hover */
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus{
+    background-color: #e1f1ff;
+}
+
+/* set the second button */
+.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.is-featured:hover, .is-featured:focus {
+    background-color: #269aff;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+    /* 删掉最下面的border, 加上中间的分割线*/
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+
+}
