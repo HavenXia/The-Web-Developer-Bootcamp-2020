@@ -1,6 +1,6 @@
 # CSS FlexBox
 
-让container能够适应页面的shrink和拉伸, 对应不同的size可以改变container内部的比例
+让container能够适应页面的shrink和拉伸, 对应不同的size可以改变container内部的比例 `display:flex;`
 
 [HTML](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/Flexbox Starter/index.html) [CSS](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Flexbox_And_Responsive/Flexbox Starter/app.css)
 
@@ -81,9 +81,9 @@ flex: 2 2 10%;
 
   
 
+# Pricing Panel Mini Project
 
-
-
+Reset CSS: 消除浏览器inconsistence的style, [link](https://meyerweb.com/eric/tools/css/reset/)
 
 
 
