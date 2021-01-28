@@ -12,7 +12,7 @@ Every CSS part can be seen as a BOX, inspect in browser and we will see.
 
 + `width, height`  是<font color = grape>**inner content area 的宽和高**</font>,比如有的时候设置背景颜色,整个一大行都被设置了
 
-  此时可以用width和height来设置**inner content box**的具体范围, 也说明了<font color = gree>我们在css设置的这些color什么的都是inner content box的参数</font>
+  此时可以用width和height来设置**inner content box**的具体范围
 
 + `border` 有自己的properties, 比如粗细之类的
 
