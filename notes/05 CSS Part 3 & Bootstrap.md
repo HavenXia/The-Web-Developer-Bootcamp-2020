@@ -87,3 +87,59 @@ Reset CSS: 消除浏览器inconsistence的style, [link](https://meyerweb.com/eri
 
 
 
+
+
+# Bootstrap
+
+The world's most popular CSS framework!
+
+很多Responsive design根本不需要自己设计, 直接用bootstrap即可, 所以CSS果然不用自己考虑太多!
+
+用bootstrap的时候甚至不需要自己写css, <font color = grape>**直接复制cdn的link贴在html即可! 同时还有几行script也要贴一下**</font>
+
+<font color = gree>然后再这个link下再放一个自己的css link, 就能修改自己想修改的东西了!</font>
+
+#### 使用
+
+只要照着document来, class之类的写对了就可以
+
+#### Buttons
+
+如果用<a>并且用了button的class, 会自动生成botton样式的link
+
+button的大小也能通过class来进行设置, 我猜text也可以这么设置
+
+#### Alignment
+
+直接用text-center, 之类就可以直接放在中间! 没有设计感的福音!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
