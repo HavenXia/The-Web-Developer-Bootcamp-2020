@@ -125,13 +125,63 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
 # Bootstrap Grid
 
-[CSS](05 Bootstrap/Grid/index.html)
+[HTML](05 Bootstrap/Grid/index.html)
 
-<font color = grape>**上面都是elements, grid是真正的layout设计**</font>
+<font color = grape>**上面都是elements, grid是真正的layout设计**</font>,<font color = red>Only work inside of container class</font> 
 
-<font color = red>Only work inside of container class</font> 
+每一行都是row class, <font color = grape>**可以被分成一共12个unit!**</font>
 
-美一行都是row class, <font color = grape>**可以被分成一共12个unit!**</font>
+- (xs) — screen width < 576px (This is the “default” tier)
+- sm — screen width ≥ 576px
+- md — screen width ≥ 768px
+- lg — screen width ≥ 992px
+- xl — screen width ≥ 1200px
+
+#### Responsive grid
+
+当经过breakpoint的时候, grid的layout会发生变化
+
+`col-breakpoint-units` <font color = grape>**当not reach breakpoint时, take n units, 当到达breakpoint(<=)时, 占据整行**</font>
+
+也可以写成`<div class="col-12 col-sm-6">Column</div>`, reach breakpoint就take 12 units!
+
+#### 几种Responsive设计
+
++ Stack To Horizontal, 如果每个div只用了一个col class, 那么当达到breakpoint时会stack起来
+
++ <font color = grape>**写多个class,实现mix and match, 比如`col-md-6 col-xl-3`**</font>, 小于medium整行,接着6, 最后3
+
+  对于图片也能使用!
+
+#### Useful Grid Utilities(都可以用breakpoints!)
+
++ Grid Alignment, 每个row都是flex, 直接可以选择`<div class="row align-items-center">` 来align
+
+  同样对于每一row里面的div, 也能设置自己的align, `<div class="col-3 bg-info align-self-end">`
+
++ <font color = grape>**同样也有justify- content,用来决定每个div的spacing, 和responsive一样选择spacing 关系**</font> 
+
+  `class="row justify-content-center justify-content-lg-start justify-content-xl-between"`
+
+  比如这里就是<font color = gree>大于xl用between, 接着大于lg用start, 最后剩余的用center</font>
+
+
+
+# Bootstrap Forms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
