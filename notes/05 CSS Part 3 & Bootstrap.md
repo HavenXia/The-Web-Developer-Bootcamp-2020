@@ -113,15 +113,25 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
 直接用text-center, 之类就可以直接放在中间! 没有设计感的福音!
 
+#### Button Group
+
+直接对几个button套个div就能实现!
+
+#### Alert
+
+可以用Dismissing alert, 就是点击完会删掉的那种
 
 
 
+# Bootstrap Grid
 
+[CSS](05 Bootstrap/Grid/index.html)
 
+<font color = grape>**上面都是elements, grid是真正的layout设计**</font>
 
+<font color = red>Only work inside of container class</font> 
 
-
-
+美一行都是row class, <font color = grape>**可以被分成一共12个unit!**</font>
 
 
 
