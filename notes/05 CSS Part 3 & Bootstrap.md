@@ -169,37 +169,104 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
 # Bootstrap Forms
 
+[HTML](05 Bootstrap/Forms/index.html)
+
+需要`form-group` class来把label和input wrap起来
+
+当然, form-group这个div也能设置breakpoint, `<div class="form-group col-md-6">`
+
+<font color = grape>**对于input elements, class = form-control 非常重要! 它让普通的html input适配了Bootstrap**</font>
+
++ set input height, 给form-control加上大小即可, 如 `class="form-control form-control-lg"`
+
++ Set input width, 这里需要用`form-row` 来wrap一行里需要的divs, 然后为div设置breakpoint
+
+#### CheckBox和Radios不用form-control
+
+<font color = red>首先注意checkbox和radios是多个class在一个form-group里面的!</font>
+
+一种是用`form-check class` 来设置stack或者inline的option
+
+第二种是<font color = grape>**Custom Forms**</font>, 会用到custom-control 和 custom-control-input
+
+```html
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="tos">
+        <label class="custom-control-label" for="tos">Sign Me Up</label>
+    </div>
+</div>
+```
+
+还能实现switch之类很多有意思的东西!
+
+#### Input Group
+
+类似于search bar那样在input左右side 加add-on
+
+此时这个add-on必须是在一个class = prepend/append的div里面, 用来确定add-on在input的哪一边
 
 
 
+# Bootstrap Navbar
+
+[HTML](05 Bootstrap/Navbars/index.html)
+
+Navbar能够做到在缩到很小的时候 ,直接变成一个dropdown! 
+
++ Brand: 由nav element wrap的a element, 中间也能有图片, <font color = grape>**Navbar开头的图标**</font>
+
++ Navs: Navbar的每个nav都是 anchor element, 且`class="nav-item nav-link"`
+
++ 所有的navs都要被一个div wrap, 且`class="collapse navbar-collapse"`, 让navs collapse
+
+  同时, 在最外围的Nav class需要设置<font color = grape>**navbar-expand-sm**</font>, 实现>= sm, 就展现这些navs, 同时这个class也能设置`fixed-top` , 让navbar固定! `sticky-top` <font color = grape>**则更智能, 当走到这个navbar的时候才开始fixed!**</font> 
+
+#### Toggle Navbar when breakpoints
+
+首先需要一个hamberger button, 点击即可出现下拉菜单
+
+```html
+<button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+    <span class="navbar-toggler-icon"></span>
+</button>
+```
+
+<font color = grape>**注意: 这里的data target必须是设置nav collaspe的div element的id!**</font>
+
+接着还可以在navbar上加search bar之类的, 都可以直接抄document
+
+注意: 当breakpoint之后,  search bar也会消失, 这是bootstrap css设置好的, 然后展开也只能展开data-toggle的目标!
 
 
 
+# Bootstrap Icons
+
+[HTML](05 Bootstrap/Icons/index.html)
+
+直接在bootstrap找到想要的icon, 然后copy code
+
+直接接在需要用的h1, button里面之类的, <font color = grape>**可以通过em设置width and height, 这样方便接在text后面,保证相同size**</font>
 
 
 
+# Other Utilities & Components
 
+[HTML](05 Bootstrap/Utilities/index.html)
 
++ Border: 直接在需要的element class里面加上`border rounded shadow ` 之类的, 还能控制哪一边的border出现
 
++ Shadow: 也能控制出现的位置, 透明度之类的
 
++ Spacing: start with m or p, 比如 `p-0 p-1` 之类的就是padding. `mb-5`就是margin-bottom 设置5
 
+  组合`p-0 pt-5` 就是先设置四边的padding, 再单独设置top的padding
 
+  <font color = grape>**甚至这里也能设置breakpoint, `p-0 p-sm-1 p-md-2` 设置不同情况下的padding**</font>
 
++ Display: 可以设置reach breakpoint的时候直接不显示, `.d-none .d-sm-block`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
++ Card: 卡片状的element
++ Carousel: 网站主页可以左右滑动的slide
++ 
 
