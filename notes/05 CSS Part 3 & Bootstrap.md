@@ -155,6 +155,12 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
 + `image-fluid` 可以让image自动size
 
++ <font color = grape>**可以有nested row的设计, 比如左边是6, 右边是6*0.8 = 4.8, 需要用justify-content-center来让这个4.8存在于6的中间**</font>
+
++ <font color = grape>**垂直居中对齐 是在row class后面加align-items-center, 水平居中是text-center**</font>
+
++ 还有`order` 属性可以设置在不同的breakpoint下,同一个row里面的col出现顺序
+
 #### Useful Grid Utilities(都可以用breakpoints!)
 
 + Grid Alignment, 每个row都是flex, 直接可以选择`<div class="row align-items-center">` 来align
@@ -167,7 +173,7 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
   比如这里就是<font color = gree>大于xl用between, 接着大于lg用start, 最后剩余的用center</font>
 
-
++ <font color = red>**记住: row中多个col对齐用align-items-center, 每个col中文字居中用text-center, 整个row让col居中用justify-content-center**</font> 
 
 # Bootstrap Forms
 
@@ -239,6 +245,10 @@ Navbar能够做到在缩到很小的时候 ,直接变成一个dropdown!
 接着还可以在navbar上加search bar之类的, 都可以直接抄document
 
 注意: 当breakpoint之后,  search bar也会消失, 这是bootstrap css设置好的, 然后展开也只能展开data-toggle的目标!
+
+#### Navbar 从透明到实体
+
+因为一直透明的话, navbar会和走过去的content重合
 
 
 
