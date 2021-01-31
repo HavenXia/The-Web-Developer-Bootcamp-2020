@@ -153,6 +153,8 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
   对于图片也能使用!
 
++ `image-fluid` 可以让image自动size
+
 #### Useful Grid Utilities(都可以用breakpoints!)
 
 + Grid Alignment, 每个row都是flex, 直接可以选择`<div class="row align-items-center">` 来align
@@ -264,7 +266,7 @@ Navbar能够做到在缩到很小的时候 ,直接变成一个dropdown!
 
   <font color = grape>**甚至这里也能设置breakpoint, `p-0 p-sm-1 p-md-2` 设置不同情况下的padding**</font>
 
-+ Display: 可以设置reach breakpoint的时候直接不显示, `.d-none .d-sm-block`
++ Display: 可以设置reach breakpoint的时候直接不显示, `d-none d-sm-block`
 
 + Card: 卡片状的element
 + Carousel: 网站主页可以左右滑动的slide
