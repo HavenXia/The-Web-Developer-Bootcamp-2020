@@ -268,5 +268,5 @@ Navbar能够做到在缩到很小的时候 ,直接变成一个dropdown!
 
 + Card: 卡片状的element
 + Carousel: 网站主页可以左右滑动的slide
-+ 
++ Spinner / Modal
 

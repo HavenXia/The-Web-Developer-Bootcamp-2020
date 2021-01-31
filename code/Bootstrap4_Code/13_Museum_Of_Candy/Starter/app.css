@@ -1,0 +1,23 @@
+body {
+    background-color: #f5d9d5;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* 修改CANDY 变得更大 */
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+}
+
+/* nav的字体都更大 */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+}
