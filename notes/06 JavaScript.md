@@ -59,8 +59,6 @@ embed variable in string. <font color = grape>**注意这里用的是`这个符�
 + `alert(str)` <font color = grape>**不在console, 而是在website上打出警告 **</font>
 + `let a = prompt(str)` <font color = grape>**在web上抛出输入框, 然后a读取userInput as String**</font>
 
-
-
 #### If statement
 
 + <font color = gree>注意Js这里的print就是`console.log()`,  scan就是`prompt("xxxx")`</font>
@@ -78,7 +76,13 @@ embed variable in string. <font color = grape>**注意这里用的是`这个符�
   }
   ```
 
-+ 
++ 也存在nested loops
+
+#### Truthy and Falsy Values
+
+有一些value默认是false的, 他们是<font color = grape>**`false, 0, "", null, undefined, NaN`**</font> , 所有剩下的都是inherit truthyness!
+
+在用if 判定时会起到作用!
 
 
 
