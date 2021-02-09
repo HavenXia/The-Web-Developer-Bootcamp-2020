@@ -177,7 +177,7 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
 # Bootstrap Forms
 
-[HTML](05 Bootstrap/Forms/index.html)
+[HTML](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Bootstrap/Forms/index.html)
 
 需要`form-group` class来把label和input wrap起来
 
@@ -281,4 +281,12 @@ Navbar能够做到在缩到很小的时候 ,直接变成一个dropdown!
 + Card: 卡片状的element
 + Carousel: 网站主页可以左右滑动的slide
 + Spinner / Modal
+
+
+
+# Bootstrap Project
+
+Museum of Candy. 值得学习
+
+[代码](/Users/parallax/Documents/CIT&CIS/The Web Developer Bootcamp 2020/code/05 Bootstrap Project/13_Museum_Of_Candy/Starter/index.html)
 
