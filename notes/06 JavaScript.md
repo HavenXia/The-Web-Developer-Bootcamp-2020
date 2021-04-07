@@ -34,7 +34,7 @@ undefined是not assigned, 比如`let x`,  <font color = grape>**此时x是undefi
 
 + `str.indeOf(str2)`, 第一个index of 1st occurence of str2 in str1
 
-+ Slice两种, `str.slice(i) ` <font color = grape>**从包括index 5开始到最后**</font>, `str.slice(i, j)` <font color = grape>**index i 到j,左开右闭**</font> 
++ Slice两种, `str.slice(i) ` <font color = grape>**从包括index 5开始到最后**</font>, `str.slice(i, j)` <font color = grape>**index i 到j,左闭右开**</font> 
 
   如果i是负数的话, <font color = grape>**就是take倒数几个char**</font>
 
@@ -206,6 +206,8 @@ const add = function (x, y) {
     return x + y;
 }
 ```
+
+简化版arrow function在下一页
 
 <font color = grape>**JS的function可以返回不同的type!这点非常特别! 比如这里可以做到xy得到不同的return value**</font> 
 
