@@ -76,7 +76,7 @@ module.exports = {
 
 既是A library of thounds of packages, 也是a command line tool to easily install and manage packages in Node projects
 
-`npm` 用来安装package, 会生成node-modules文件夹, <font color = red>**完全不要动它!!!!**</font>
+`npm` 用来安装package, 会生成node-modules文件夹, <font color = red>**完全不要动它!!!!**</font> 安装的syntax是先`npm init` 再 `npm i xxx`
 
 然后可以直接用<font color = grape>**`require(packageName)` 来获取它, 并且用`console.dir()` 来查看, 同样read json也可以用这个**</font>
 
