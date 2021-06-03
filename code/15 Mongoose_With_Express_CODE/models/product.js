@@ -19,4 +19,5 @@ const productSchema = new mongoose.Schema({
 
 const Product = mongoose.model('Product', productSchema);
 
+// export了这个model class
 module.exports = Product;

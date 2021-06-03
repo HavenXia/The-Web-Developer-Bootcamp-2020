@@ -141,7 +141,7 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 
 当经过breakpoint的时候, grid的layout会发生变化
 
-`col-breakpoint-units` <font color = grape>**当not reach breakpoint时, take n units, 当到达breakpoint(<=)时, 占据整行**</font>
+`col-breakpoint-units` <font color = grape>**当not reach(大于) breakpoint时, take n units, 当到达breakpoint(<=)时, 占据整行**</font>
 
 也可以写成`<div class="col-12 col-sm-6">Column</div>`, reach breakpoint就take 12 units!
 
@@ -213,6 +213,12 @@ button的大小也能通过class来进行设置, 我猜text也可以这么设置
 类似于search bar那样在input左右side 加add-on
 
 此时这个add-on必须是在一个class = prepend/append的div里面, 用来确定add-on在input的哪一边
+
+#### Validator
+
+Bootstrap 有validator可以验证当前的input, 并且可以设置validation feedback, 需要JS的配合
+
+
 
 
 

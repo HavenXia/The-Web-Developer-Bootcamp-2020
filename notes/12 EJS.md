@@ -106,9 +106,46 @@ app.get('/r/:subreddit', (req, res) => {
 
 
 
+### ejs-mate (package to 实现partial)
+
+让header和footer通用,比如写一个boilerplate.ejs(模板)
+
+```ejs
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOILERPLATE!!!!</title>
+</head>
+
+<body>
+    <h1>BEFORE</h1>
+    <%- body %>
+        <h1>AFTER</h1>
+</body>
+
+</html>
+```
+
+这样的话在其他的ejs里面, 就不需要这些header和footer了, 只需要在第一句写上
+
+```ejs
+<% layout('layouts/boilerplate') %>
+```
+
+然后这个ejs的内容就会自动在前面和后面加上`<%- body %>` 上下的内容, 这样每个ejs都只要写主体部分就好了!
 
 
 
+<font color = grape>**接着对于这个boilerplate.ejs也可以在其中加入其他partial, 比如把navbar的code单独拿出来, 然后用**</font>
 
+```ejs
+<!-- include the navbar -->
+<%- include('../partials/navbar') %>
+```
 
+来在boilterplate中加入navbar, 这样所有用这个layout 的ejs也都会有navbar, 好处是**让boilerplate不那么臃肿!**
 

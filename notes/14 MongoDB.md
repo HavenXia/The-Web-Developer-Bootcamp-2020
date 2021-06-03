@@ -17,6 +17,8 @@ NoSQL: can put any types of data into it, including document, key-value and grap
 ```bash
 brew services start mongodb-community@4.4
 brew services stop mongodb-community@4.4
+// 每次开机输入一次
+mongod --config /usr/local/etc/mongod.conf --fork
 ```
 
 然后输入mongo进入mongo shell, 此时可以使用javascript
